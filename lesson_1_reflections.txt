@@ -1,0 +1,18 @@
+The diff function is really useful. I can see how wicked that would be when you  are struggling to find a difference and dont want to comb over every line. The -u part is a big ambiguous at this point, but I suppose I just have to remember that it is just to have it return the request in a digestable format.
+This has me wondering about copying webpages. If we can view the sourcecode of any webpage can we just copy paste someone else's code and make a few changes to have a good, cheap website? I'm sure there is a flaw in this thinking - I just dont see it yet..
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+I imagine that I will have to backtrack sometimes when code doesn't work. In those instances the version control will be huge. Or when build an app it may work at one stage but not at the next. Seeing the old version may help me to see why it stopped working.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+Pros: a logical difference in each version, less confusing, less data, doesnt save temporary mistakes or partial changes.
+Cons: have to remember to save - some risk and effort
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+It makes sense the programming oriented version controls allows saving multiple files in one commit because often programming files will be interelated and changes to one require changes to another. It would be confusing and difficult find corresponding version of the separate files if they were not somehow linked (as they are with a multi-file commit). Something like googleDocs on the other hand is less likely to tied to a particular version of a different document so the feature is less important. This elevates the advantages of auto saving above the disadvantages.
+
+How can you use the commands git log and git diff to view the history of files?
+Use git log to call all the previous commits and then use git diff -u to compare two of the id numbers for the various commits. Can also use git diff --stats to get some stats info on the comparison.
+
+How might using version control make you more confident to make changes that could break something?
+I wouldnt feel like Ill lose everything. COuld even have versions saved that maybe both work but they just work differently.
