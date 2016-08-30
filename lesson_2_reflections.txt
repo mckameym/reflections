@@ -3,3 +3,18 @@ When you initialize a repository it is kind of like creating a folder for a new 
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 The staging area is the intermediary between the working directory and the repository. After checking out a version, we are moved to the working directory to make any changes we think are necessary. Once changes have been made, we may want to make another commit with some or all of the files. The staging area comes in handy when we dont want to all of the files to be in a commit. We can put whichever ones we want in the staging area and then simply commit them and leave the others as they are.
+
+How can you use the staging area to make sure you have one commit per logical change?
+First you add the changes you want to the staging area. Then make sure that you have add what you want by comparing the staging area and the working directory with git diff. Then you can compare the changed code in staging area with the most recent commit with git diff --staged. That should ensure you that you're changes represent a logical break point and you will be ready to commit.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+When you want to try something new out and are unsure whether it'll stick. When you want different versions developed on parallel tracks for one reason or another (ie. languages, for different countries - can and usa marketing)
+
+How do the diagrams help you visualize the branch structure?
+I can see where the branches break off and what their parents are. And maybe more importantly it helps me understand the idea of a detached head and reachability
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+The result of merging two branches together is that the commits from each are put into one (often the master). They are arrange chronologically. The diagram shows how the branches are treated separately until merged.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+I love the auto merging and that it has safety mechanisms not to screw something up. It would be tedious to have to manually pick every change that needs to be merged, while on the other hand it would be a major headache if smashed everything together and broke the code and then you had to go through and put the pieces back together. Its a good balance.
